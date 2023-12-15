@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+ @for(item of districts; track item.id){
+ 
+   <div class="card my-4 mx-3" style="width: 18rem;">
+     <img src="{{ item.image }}" class="card-img-top img1" alt="..."/>
+     <div class="card-body">
+    
+
+      
+       <h5 class="card-title">{{ item.title }}</h5>
+       <p class="card-text">Enna kidilam jilla anne</p>
+       <a [routerLink]="['/district',item.id]" class="btn btn-primary">Enna ee jilla kanano</a>
+       <div class="card">
+      </div>
+      
+      <a href="https://mythrillfiction.com/" target="_blank">its me SUBIN</a>
+     </div>
+   </div>
+  
+  }
+  </div>
+ </div>
+
+
+
+ 
